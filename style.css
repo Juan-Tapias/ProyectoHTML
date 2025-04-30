@@ -1,0 +1,222 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+  }
+  
+  .menu-checkbox {
+    display: none;
+    transition: 0.5s;
+  }
+  
+  .menu {
+    border-radius: 100%;
+    background-color: pink;
+    width: 15vw;
+    height: 15vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid black;
+    z-index: 2;
+    transition: 0.5s;
+    margin: 3vw;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  
+  .menu img.imagen-menu {
+    width: 7vw;
+    height: 7vw;
+  }
+  
+  .menu-checkbox:checked + .menu {
+    display: none;
+  }
+  
+  .menu-expandido {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: pink;
+    width: 100vw;
+    height: 25vw;
+    z-index: 3;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    transition: 0.5s;
+  }
+  
+  .menu-checkbox:checked ~ .menu-expandido {
+    display: flex;
+    width: 50vw;
+    height: 100vh;
+}
+  
+
+  .cerrar {
+    position: absolute;
+    top: 1vw;
+    right: 1vw;
+    z-index: 4;
+    border-radius: 100%;
+    border: 5px solid black;
+    width: 12vw;
+    height: 12vw;
+    background-color: pink;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  
+  .imagen-cerrar {
+    width: 9vw;
+    height: 9vw;
+  }
+  .fondo-oscuro {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2; 
+    display: none;
+    transition: opacity 0.3s ease;
+  }
+  .menu-checkbox:checked ~ .fondo-oscuro {
+    display: block;
+  }
+  .hamburguesa1,
+  .hamburguesa2,
+  .hamburguesa3,
+  .hamburguesa4 {
+    font-size: 5vw;
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    margin-top: 1vw;
+    color: black;
+    transition: 0.5s;
+  }
+  
+  .hamburguesa1 img,
+  .hamburguesa2 img,
+  .hamburguesa3 img,
+  .hamburguesa4 img {
+    width: 3vw;
+    height: auto;
+    transition: 0.5s;
+  }
+  
+  .inicial {
+    height: 500px;
+  }
+  
+ .inicial {
+    border-bottom: 1px solid black;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: -32vw;
+    background-color: pink;
+    height: 500px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .parte-amarilla {
+    background-color: #fff35f;
+    height: 100vh;
+  }
+  
+  .texto1 {
+    font-size: 10vw;
+    font-family: 'Luckiest Guy', cursive;
+    color: #015bfe;
+    text-align: center;
+    z-index: 3;
+    position: relative;
+    margin-bottom: 20px;
+    margin-top: 40vw;
+  }
+  
+  .pareja1 {
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+  }
+  
+  .pareja1 img {
+    border: 1px solid black;
+    margin-top: 15vw;
+    width: 55vw;
+    height: 90vw;
+    border-radius: 50% 50% 50% 50% / 30% 30% 30% 30%;
+    object-fit: cover;
+    object-position: center;
+  }
+.sombra img{
+    margin-top: 70vw;
+    margin-left: 5vw;
+}
+.sombra2{
+    margin-top: -12vw ;
+    margin-right: 5vw;
+    display: flex;
+    justify-content: flex-end;
+}
+.cara-feliz img{
+    position: absolute;
+    margin-left: 10vw;
+    margin-top: 25vw;
+    z-index: 2;
+    width: 23vw;
+    height: 23vw;
+}
+.rayo{
+    position: absolute;
+    right: 0;
+    width: 10vw;
+    height: 10vw;
+    margin-right: 10vw;
+}
+.rayo{
+    position: absolute;
+    width: 15vw;
+    height: 15vw;
+    margin-top: -10vw;
+}
+.estrella-amarilla{
+    position: absolute;
+    right: 0;
+    width: 8vw;
+    height: 8vw;
+    margin-top: 7vw;
+    margin-right: 8vw;
+}
+.estrella-amarilla2{
+    position: absolute;
+    margin-left: 4vw;
+    margin-top: -5vw;
+    width: 10vw;
+    height: 10vw;
+}
+.estrella-amarilla3{
+    position: absolute;
+    margin-top: 8vw;
+    width: 5vw;
+    height: 5vw;
+}
