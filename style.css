@@ -134,9 +134,9 @@ body {
     z-index: 1;
   }
   
-  .parte-amarilla {
+  .parte-amarilla{
     background-color: #fff35f;
-    height: 100vh;
+    height: 150vh;
   }
   
   .texto1 {
@@ -218,4 +218,43 @@ body {
     margin-top: 8vw;
     width: 5vw;
     height: 5vw;
+}
+.texto2{
+    font-size: 15vw;
+    color: #015bfe;
+}
+.contenedor{
+    display: flex;
+    margin-top: 5vw;
+    margin-left: 10vw;
+    height: 50vw;
+}
+.contenedor2{     
+    width: 75vw;                                                                                                                                                                                                                                         
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10vw;
+    height: 70vw;
+}
+.texto3{
+    font-size: 5vw;
+}
+.contenedor3{
+    display: flex;
+    margin-left: 10vw;
+}
+.anillos1{
+    position: absolute;
+    width: 17vw;
+    height: 17vw;
+    margin-left: 37vw;
+    margin-top: -2vw;
+}
+.splash{
+    position: absolute;
+    width: 20vw;
+    height: 20vw;
+    margin-left: 50vw;
+    margin-top: -5vw;
 }
