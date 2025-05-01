@@ -231,8 +231,7 @@ body {
     height: 50vw;
 }
 .contenedor2{     
-    width: 75vw;                                                                                                                                                                                                                                         
-    display: flex;
+    width: 75vw;                                                                                 display: flex;
     justify-content: center;
     align-items: center;
     margin-left: 10vw;
@@ -266,4 +265,71 @@ body {
     margin-left: 13vw;
     margin-top: 13vw;
     rotate: -3deg;
+}
+section {
+  position: relative;
+}
+.galeria-blanca{
+  height: 120vw;
+  background-color: white;
+  display: flex;
+  width: 100%;
+  overflow: visible;
+  position: relative;
+}
+.galeria-roja{
+  position: absolute;
+  width: 100%;
+  height: 70vw;
+  background-color: rgb(255, 108, 108);
+  display: flex;
+  overflow: visible;
+  z-index: 2;
+}
+.slider {
+  position: relative;
+  display: flex;
+  animation: slide 10s linear infinite;
+  z-index: 1;
+}
+
+.slider img {
+  position: relative;
+  margin-top: 5vw;
+  border: 3px solid black;
+  border-radius: 15%;
+  width: 50vw;
+  height: 65vw;
+  object-fit: cover;
+  margin-right: 3vw;
+}
+.slider2 {
+  position: relative;
+  display: flex;
+  animation: slide 10s linear infinite;
+  z-index: 2;
+}
+
+.slider2 img {
+  position: relative;
+  z-index: 3;
+  margin-top: -30vw;
+  border: 3px solid black;
+  border-radius: 15%;
+  width: 50vw;
+  height: 65vw;
+  object-fit: cover;
+  margin-right: 3vw;
+}
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+.precios{
+  height: 100vw;
+  background-color: white;
 }
