@@ -27,6 +27,7 @@ body {
     margin: 3vw;
     cursor: pointer;
     transition: 0.5s;
+    position: sticky;
   }
   
   .menu img.imagen-menu {
@@ -136,7 +137,7 @@ body {
   
   .parte-amarilla{
     background-color: #fff35f;
-    height: 150vh;
+    height: 117vh;
   }
   
   .texto1 {
@@ -181,7 +182,7 @@ body {
     position: absolute;
     margin-left: 10vw;
     margin-top: 35vw;
-    z-index: 2;
+    z-index: 1;
     width: 23vw;
     height: 23vw;
 }
@@ -257,4 +258,12 @@ body {
     height: 20vw;
     margin-left: 50vw;
     margin-top: -5vw;
+}
+.pareja2{
+    position: absolute;
+    width: 75vw;
+    height: 88vw;
+    margin-left: 13vw;
+    margin-top: 13vw;
+    rotate: -3deg;
 }
