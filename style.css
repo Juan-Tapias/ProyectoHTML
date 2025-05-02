@@ -1,7 +1,13 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  box-sizing:border-box;
 }
 header{
   display: flex;
@@ -40,6 +46,10 @@ header{
   transition: 0.5s;
   position: sticky;
 }
+.menu-expandido a {
+  text-decoration: none;
+  color: #000;
+}
 
 .menu img.imagen-menu {
   width: 7vw;
@@ -67,6 +77,7 @@ header{
   border: 1px solid black;
   transition: opacity 0.5s;
   color: black;
+  font-weight: bold;
 }
 
 .menu-checkbox:checked ~ .menu-expandido {
@@ -1036,5 +1047,23 @@ header{
     right: 0;
     width: 20vw;
     height: 30vw;
+  }
+  .contenedor2 {
+    width: 75vw;
+    justify-content: center;
+    align-items: center;
+    right: 0;
+    height: 70vw;
+    margin-top: 40vw;
+  }
+  .texto2 {
+    position: absolute;
+    margin-top: 100vw;
+    font-size: 8vw;
+    color: #3373A7;
+    right: 28vw;
+  }
+  .texto3 {
+    font-size: 2vw;
   }
 }
