@@ -3,12 +3,19 @@ body {
   padding: 0;
   overflow-x: hidden;
 }
-header {
+header{
   display: flex;
   justify-content: flex-end;
   position: relative;
 }
-
+.contenedor-chat{
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  position: absolute;
+  bottom: 0;              
+  right: 0;
+}
 .menu-checkbox {
   display: none;
   transition: 0.5s;
@@ -653,5 +660,202 @@ header {
   align-content: center;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 280vw;
+}
+.contacto {
+  position: relative;
+  width: 100vw;
+  background-color: #ffc0cb; 
+}
+
+.imagenes-contacto {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.contacto img {
+  position: absolute;
+}
+
+.radio     { top: 8%;  left: 15%; width: 30vw; }
+.yay       { top: 5%;  left: 50%; width: 20vw;}
+.disco     { top: 7%;  left: 75%; width: 20vw;}
+.brillos   { top: 30%; left: 80%; width: 15vw; height: 20vw;}
+.anillo    { top: 15%; left: 75%; width: 20vw;}
+.serpentina-azul { top: 10%; left: 77%; width: 10vw;}
+.serpentina-naranja { top: 10%; left: 20%; width: 30vw;}
+.corazon   { top: 10%; left: 10%; width: 20vw;}
+.libro     { top: 10%; left: 10%; width: 20vw;}
+.champaña  { top: 10%; left: 60%; width: 20vw;}
+.carita    { top: 15%; left: 5%; width: 20vw;}
+.pareja    { top: 20%; left: 25%; width: 60vw; }
+
+.consulta{
+  position: absolute;
+  margin-top: 10vw;
+  font-size: 12vw;
+  left: 0;
+  color: #035DFF;
+  margin-left: 5vw;
+}
+.calendario{
+  font-size: 5vw;
+  position: absolute;
+  left: 0;
+  margin-top: 50vw;
+  margin-left: 5vw;
+}
+.fecha{
+  font-size: 8vw;
+  position: absolute;
+  left: 0;
+  margin-top: 100vw;
+  margin-left: 5vw;
+  color: #FF6541;
+}
+.flecha-izquierda{
+  width: 10vw;
+  height: 10vw;
+}
+.flecha-izquierda img{
+  position: absolute;
+  right: 0;
+  margin-top: 50vw;
+  margin-right: 28vw;
+  width: 10vw;
+  height: 10vw;
+}
+.circulo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  position: absolute;
+  right: 0;
+  margin-top: 100vw;
+  margin-right: 7vw;
+  border-radius: 50%;
+  width: 15vw;
+  height: 15vw;
+  background-color: #FF6541;
+}
+.circulo img{
+  width: 10vw;
+  height: 10vw;
+}
+.linea-naranja{
+  position: absolute;
+  margin-top: 125vw;
+  background-color: #FF6541;
+  width: 88%;
+  height: 1vw;
+  border-radius: 50px;
+  left: 0;
+  margin-left: 5vw;
+}
+.redes{
+  position: absolute;
+  left: 0;
+  margin-left: 7vw;
+  margin-top: 200vw;
+  border: 1px solid black;
+  display: grid;
+  width: 85%;
+  grid-template-columns: 25vw 25vw 12vw 12vw 12vw;
+  grid-template-rows: 20vw 15vw;
+  grid-template-areas:
+    "publicidad publicidad publicidad publicidad publicidad"
+    "politica politica facebook instagram telegram";
+}
+.publicidad{
+  grid-area: publicidad;
+  border: 1px solid black;
+  background-color: white;
+  padding: 1em;
+  font-size: 4vw;
+}
+.politicas{
+  grid-area: politica;
+  border: 1px solid black;
+  background-color: white;
+  padding: 1em;
+  font-size: 3vw;
+}
+.facebook{
+  grid-area: facebook;
+  border: 1px solid black;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.circulo-azul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  position: absolute;
+  border-radius: 50%;
+  width: 10vw;
+  height: 10vw;
+  background-color:#9EF3F3;
+}
+.instagram{
+  grid-area: instagram;
+  border: 1px solid black;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.circulo-rosado{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  position: absolute;
+  border-radius: 50%;
+  width: 10vw;
+  height: 10vw;
+  background-color: pink;
+}
+.telegram{
+  grid-area: telegram;
+  border: 1px solid black;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.circulo-amarillo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  position: absolute;
+  border-radius: 50%;
+  width: 10vw;
+  height: 10vw;
+  background-color: #fff35f;
+}
+.caja-negra{
+  height: 20vw;
+  background-color: #000000;
+}
+.chat{
+    width: 20vw;
+    height: 20vw;
+    border-radius: 100%;
+    background-color: #fff35f;
+    border: 1px solid black;
+    position: fixed;
+    z-index: 3;
+    bottom: 1vw;
+    right: 1vw;
+    align-content: center;
+    text-align: center;
 }
