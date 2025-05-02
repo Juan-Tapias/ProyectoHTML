@@ -63,6 +63,7 @@ header{
   align-items: center;
   border: 1px solid black;
   transition: opacity 0.5s;
+  color: black;
 }
 
 .menu-checkbox:checked ~ .menu-expandido {
@@ -783,6 +784,7 @@ header{
   background-color: white;
   padding: 1em;
   font-size: 3vw;
+  color: black;
 }
 .facebook{
   grid-area: facebook;
@@ -804,6 +806,10 @@ header{
   height: 10vw;
   background-color:#9EF3F3;
 }
+.circulo-azul img{
+  margin-top: -10px;
+  margin-left: -5px;
+}
 .instagram{
   grid-area: instagram;
   border: 1px solid black;
@@ -824,6 +830,10 @@ header{
   height: 10vw;
   background-color: pink;
 }
+.circulo-rosado img{
+  margin-top: -11px;
+  margin-left: -11px;
+}
 .telegram{
   grid-area: telegram;
   border: 1px solid black;
@@ -843,6 +853,10 @@ header{
   width: 10vw;
   height: 10vw;
   background-color: #fff35f;
+}
+.circulo-amarillo img{
+  margin-top: -10px;
+  margin-left: -12px;
 }
 .caja-negra{
   height: 20vw;
