@@ -48,44 +48,46 @@ header{
 }
 
 .menu-expandido {
-  display: none;
+  opacity: 0;
+  pointer-events: none;
   position: fixed;
   top: 0;
   right: 0;
   background-color: pink;
-  width: 100vw;
-  height: 25vw;
+  width: 50vw;
+  height: 100vh;
   z-index: 3;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   border: 1px solid black;
-  transition: 0.5s;
+  transition: opacity 0.5s;
 }
 
 .menu-checkbox:checked ~ .menu-expandido {
-  display: flex;
+  opacity: 1;
+  pointer-events: auto;
   width: 50vw;
   height: 100vh;
-  transition: 1s;
 }
 
 
 .cerrar {
+  padding: 1vh;
   position: absolute;
   top: 1vw;
   right: 1vw;
   z-index: 4;
   border-radius: 100%;
   border: 5px solid black;
-  width: 12vw;
-  height: 12vw;
+  width: 13vw;
+  height: 13vw;
   background-color: pink;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  transition: 0.5s;
 }
 
 .imagen-cerrar {
