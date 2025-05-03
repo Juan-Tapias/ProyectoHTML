@@ -1242,7 +1242,9 @@ header{
     margin-top: -2vw;
   }
   .rueda-checkbox:checked + label .rueda-click img {
-    transform: translateX(30vw);
+    transform: translateX(30
+    
+    vw);
   }
   .compromiso-texto {
     margin-top: 4vw;
