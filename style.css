@@ -12,7 +12,7 @@ header{
   display: none;
   opacity: 0;
 }
-.sombra3 .sombra4 .sombra5 .texto-sombra .texto-sombra2{
+.sombra3, .sombra4,.sombra5, .texto-sombra, .texto-sombra2, .boton-cabina{
   opacity: 0;
 }
 .contenedor-chat{
@@ -449,6 +449,13 @@ header{
   transition: linear 1s;
   transform: translateX(70vw);
 }
+.signo-pregunta{
+  position: absolute;
+  width: 4vw;
+  height: 4vw;
+  margin-top: -36vw;
+  margin-left: 60vw;
+}
 .compromiso {
   border: 2px solid black;
   grid-area: compromiso;
@@ -474,6 +481,7 @@ header{
   transition: all .3s ease;
   border: none;
   outline: none;
+  box-shadow: 2vw 2vw black;
 }
 
 .switch:checked {
@@ -511,6 +519,13 @@ header{
   color: #FF6541;
   margin-top: -2vw;
 }
+.signo-pregunta2{
+  position: absolute;
+  width: 4vw;
+  height: 4vw;
+  margin-top: -44vw;
+  margin-left: 41vw;
+}
 .ceremonia {
   border: 2px solid black;
   grid-area: ceremonia;
@@ -523,11 +538,14 @@ header{
   font-size: 6vw;
   color: #FF6541;
 }
+.texto-mover{
+  margin-left: -4vw;
+}
 .anillos-centro{
   position: absolute;
-  width: 12vw;
-  height: 12vw;
-  margin-left: 30vw;
+  width: 28vw;
+  height: 28vw;
+  margin-left: 26vw;
 }
 .switch2 {
   margin-top: 10vw;
@@ -542,6 +560,7 @@ header{
   transition: all .3s ease;
   border: none;
   outline: none;
+  box-shadow: 2vw 2vw black;
 }
 
 .switch2:checked {
@@ -611,16 +630,41 @@ header{
   color: #00225e;
   margin-top: 15vw;
 }
-.imagen-cabina img{
-  margin-top: 5vw;
-  width: 25vw;
-  height: 25vw;
+.boton-cabina{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  font-size: 13vw;
+  color: pink;
+  width: 40vw;
+  height: 15vw;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 10vw;
+  margin-top: 10vw;
+  margin-left: 1.3vw;
+  box-shadow: 2vw 2vw black;
 }
 .cabina-texto{
   margin-top: 5vw;
   text-align: center;
   font-size: 6vw;
   color: #00225e;
+}
+.mas{
+  position: absolute;
+  width: 7vw;
+  height: 7vw;
+  margin-left: 12vw;
+  margin-top: -10vw;
+}
+.menos{
+  position: absolute;
+  width: 7vw;
+  height: 7vw;
+  margin-left: -15vw;
+  margin-top: -10vw;
 }
 .mapa {
   color: white;
@@ -663,9 +707,9 @@ header{
 .imagen-camara{
   position: absolute;
   right: 0;
-  margin-right: 30vw;
-  width: 10vw;
-  height: 10vw;
+  margin-right: 15vw;
+  width: 25vw;
+  height: 25vw;
   margin-top: -45vw;
 }
 .contacto{
@@ -895,7 +939,8 @@ header{
   .menu,
   .menu-expandido,
   .cerrar,
-  .fondo-oscuro{
+  .fondo-oscuro,
+  .estrella-cabina{
     opacity: 0;
     display: none ;
   }
@@ -1204,6 +1249,7 @@ header{
   }
   
   .sombra5 img {
+    opacity: 1;
     z-index: 10;
     margin-top: 40vw;
     width: 4vw;
@@ -1306,16 +1352,19 @@ header{
       "cabina lugar lugar . .";
   }
   .titulo {
-    font-size: 2.5vw;
+    text-align: center;
+    font-size: 3vw;
     padding: 5px;
   }
   .horas {
     font-size: 2.2vw;
-    padding: 0.3em;
+    padding-left: 4vw;
   }
   .barra-amarilla {
     margin-top: 3vw;
     height: 1vw;
+    margin-left: 1vw;
+    width: 30vw;
   }
   .rueda-click {
     width: 6vw;
@@ -1327,61 +1376,210 @@ header{
     margin-top: -2vw;
   }
   .rueda-checkbox:checked + label .rueda-click img {
-    transform: translateX(30
-    
-    vw);
+    transform: translateX(25vw);
+  }
+  .signo-pregunta{
+    position: absolute;
+    width: 1vw;
+    height: 1vw;
+    margin-top: -11vw;
+    margin-left: 18vw;
   }
   .compromiso-texto {
     margin-top: 4vw;
     font-size: 2vw;
   }
   .switch, .switch2 {
-    margin-top: 3vw;
-    height: 1.8rem;
-    width: 3.5rem;
+    margin-top: 1vw;
+    height: 5vw;
+    width: 10.2vw;
+    box-shadow: 0.5vw 0.5vw black;
   }
   .switch::before, .switch2::before {
-    height: 1.6rem;
-    width: 1.6rem;
+    margin-top: 0.3rem;
+    margin-left: 0.2vw;
+    height: 4vw;
+    width: 4vw;
   }
   .switch:checked::before, .switch2:checked::before {
-    transform: translateX(1.8rem);
+    transform: translateX(5.5vw);
   }
   .NO {
     font-size: 1.8vw;
-    margin-top: -0.5vw;
   }
-  .ceremonia-texto, .texto-digital, .texto-digital2,
-  .texto-cabina, .cabina-texto, .lugar, .precio-texto {
+  .signo-pregunta2{
+    position: absolute;
+    width: 1vw;
+    height: 1vw;
+    margin-top: -11vw;
+    margin-left: 15vw;
+  }
+  .ceremonia-texto, .texto-digital2,
+  .precio-texto {
     font-size: 2vw;
     margin-top: 4vw;
   }
-  .anillos-centro {
-    width: 4vw;
-    height: 4vw;
-    margin-left: 10vw;
+  .signo-pregunta3{
+    position: absolute;
+    width: 1vw;
+    height: 1vw;
+    margin-top: -11vw;
+    margin-left: 16vw;
   }
-  .imagen-digital img, .imagen-cabina img {
+  .anillos-centro {
+    position: absolute;
+    width: 8vw;
+    height: 8vw;
+    margin-left: -4vw;
+    margin-top: 1vw;
+  }
+  .imagen-digital img{
     margin-top: 1vw;
     width: 8vw;
     height: 8vw;
   }
+  .signo-pregunta4{
+    position: absolute;
+    width: 1vw;
+    height: 1vw;
+    margin-top: -17vw;
+    margin-left: 5.5vw;
+  }
+  .signo-pregunta5{
+    position: absolute;
+    width: 1vw;
+    height: 1vw;
+    margin-top: -13vw;
+    margin-left: 6vw;
+  }
   .region {
-    font-size: 1.8vw;
-    margin-top: -2vw;
-    margin-right: 3vw;
+    font-size: 1.4vw;
+    margin-top: -1.5vw;
+    margin-right: 42vw;
+  }
+  .imagen-region{
+    margin-top: 2vw;
+    width: 25.5vw;
+    margin-left: 5vw;
+  }
+  .lugar{
+    font-size: 2vw;
+    margin-top: 1.5vw;
+    margin-left: 4vw;
   }
   .precio-texto {
-    margin-top: 1.5vw;
+    font-size: 2vw;
+    margin-top: 2vw;
+    margin-left: 4vw;
   }
   .dinero {
-    font-size: 5vw;
+    font-size: 6vw;
+    margin-left: 4vw;
   }
   .imagen-camara {
-    margin-right: 10vw;
-    width: 4vw;
-    height: 4vw;
-    margin-top: -15vw;
+    position: absolute;
+    margin-right: 15vw;
+    width: 8vw;
+    height: 8vw;
+    margin-top: -17vw;
   }
-  
+  .texto-digital{
+    font-size: 2vw;
+    margin-top: 2vw;
+  }
+  .texto-digital2{
+    font-size: 2vw;
+    margin-top: 1vw;
+  }
+  .texto-cabina{
+    color: #035DFF;
+    font-size: 2vw;
+    margin-top: 3vw;
+  }
+  .cabina-texto{
+    color: #035DFF;
+    font-size: 2vw;
+    margin-top: 2vw;
+  }
+  .boton-cabina{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    font-size: 4vw;
+    color: pink;
+    width: 15vw;
+    height: 7vw;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5vw;
+    margin-top: 2vw;
+    margin-left: 1.3vw;
+    box-shadow: 0.5vw 0.5vw black;
+  }
+  .mas{
+    position: absolute;
+    width: 2.5vw;
+    height: 2.5vw;
+    margin-left: 3.5vw;
+    margin-top: -4.5vw;
+  }
+  .menos{
+    position: absolute;
+    width: 2.5vw;
+    height: 2.5vw;
+    margin-left: -6vw;
+    margin-top: -4.5vw;
+  }
+  .email{
+    background-color: pink;
+    width: 40vw;
+    border: 1px solid black;
+  }
+  .texto-email{
+    font-size: 1.8vw;
+    margin-top: 2.2vw;
+    margin-left: 5.5vw;
+  }
+  .texto-email-pequeño{
+    color: #FF6541;
+    font-size: 1vw;
+    margin-top: 7.5vw;
+    margin-left: -14.5vw;
+  }
+  .email-aqui{
+    position: absolute;
+    border: 1px solid black;
+    background-color: pink;
+    margin-top: 7.5vw;
+    margin-left: 8.5vw;
+    width: 13vw;
+    border-radius: 5vw;
+  }
+  .barra-naranja{
+    position: absolute;
+    margin-top: 9.2vw;
+    height: 0.4vw;
+    margin-left: 5.5vw;
+    width: 20vw;
+    background-color: #FF6541;
+    border-radius: 50px;
+  }
+  .capturar-email{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 0.8vw;
+    margin-top: 4.2vw;
+    margin-left: 28vw;
+    position: absolute;
+    width: 5vw;
+    height: 5vw;
+    border-radius: 10vw;
+    background-color: #FF6541;
+    border: 1px solid black;
+    box-shadow: 0.4vw 0.4vw black;
+  }
 }
