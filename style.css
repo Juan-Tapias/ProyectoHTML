@@ -12,7 +12,7 @@ header{
   display: none;
   opacity: 0;
 }
-.sombra3, .sombra4, .sombra5{
+.sombra3 .sombra4 .sombra5 .texto-sombra .texto-sombra2{
   opacity: 0;
 }
 .contenedor-chat{
@@ -1153,12 +1153,14 @@ header{
     height: 4vw;
   }
   .texto-sombra{
+    opacity: 1;
     font-size: 1.3vw;
     margin-top: -3vw;
     margin-left: 7vw;
     width: 13vw;
   }
   .texto-sombra2{
+    opacity: 1;
     font-size: 1.3vw;
     margin-top: -1.5vw;
     margin-left: 70vw;
