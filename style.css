@@ -9,9 +9,14 @@ header{
   position: relative;
 }
 @font-face {
-  font-family: 'MiFuente';
-  src: url('fonts/Anybody-Medium.otf') format('otf'),
-       url('fonts/GulfsDisplay-Normal.woff') format('woff');
+  font-family: 'Anybody';
+  src: url('fonts/Anybody-Medium.otf') format('otf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'GulfsDisplay';
+  src: url('fonts/GulfsDisplay-Normal.woff') format('wotf');
   font-weight: normal;
   font-style: normal;
 }
