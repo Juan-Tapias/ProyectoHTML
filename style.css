@@ -339,6 +339,43 @@ header{
   margin-left: 13vw;
   margin-top: 13vw;
   rotate: -3deg;
+  border: 10px solid white;
+  box-sizing: border-box;
+  z-index: 5;
+  box-shadow: 0 0 0 1px black;
+}
+.foto-con-marcos {
+  position: relative;
+}
+
+.marco {
+  position: absolute;
+  width: 75vw;
+  height: 88vw;
+  border: 10px solid;
+  box-sizing: border-box;
+  z-index: 4;
+  box-shadow: 0 0 0 1px black;
+}
+
+.marco-rosa {
+  border-color: pink;
+  margin-top: 13vw;
+  margin-left: 8vw;
+  top: 10px;
+  left: 10px;
+  rotate: -3deg;
+}
+
+.marco-rosado2 {
+  border-color: pink;
+  margin-top: 18vw;
+  margin-left: 6.5vw;
+  height: 87vw;
+  top: 5px;
+  left: 5px;
+  rotate: -3deg;
+  z-index: 3;
 }
 
 /* Galería */
@@ -999,7 +1036,7 @@ header{
     background-color: #fff35f;
     border: 1px solid black;
     position: fixed;
-    z-index: 3;
+    z-index: 10;
     bottom: 3vw;
     right: 3vw;
     align-content: center;
@@ -1252,6 +1289,43 @@ header{
     margin-left: 15vw;
     margin-top: -25vw;
     rotate: -3deg;
+    border: 10px solid white;
+    box-sizing: border-box;
+    z-index: 5;
+    box-shadow: 0 0 0 1px black;
+  }
+  .foto-con-marcos {
+    position: relative;
+  }
+  
+  .marco {
+    position: absolute;
+    width: 22vw;
+    height: 24.5vw;
+    border: 10px solid;
+    box-sizing: border-box;
+    z-index: 4;
+    box-shadow: 0 0 0 1px black;
+  }
+  
+  .marco-rosa {
+    border-color: pink;
+    margin-top: -24.5vw;
+    margin-left: 13.5vw;
+    top: 10px;
+    left: 10px;
+    rotate: -3deg;
+  }
+  
+  .marco-rosado2 {
+    border-color: pink;
+    margin-top: -23vw;
+    margin-left: 13.4vw;
+    height: 24vw;
+    top: 5px;
+    left: 5px;
+    rotate: -3deg;
+    z-index: 3;
   }
   .parte-amarilla2 {
     position: relative;
