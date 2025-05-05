@@ -21,7 +21,6 @@ Este proyecto es un sitio web interactivo diseñado para parejas que buscan capt
 | 📱 Media Queries | Adaptación a diferentes tamaños de pantalla |
 
 ## 📂 Estructura del Proyecto
-```plaintext
 📦wedding-planner
 ├── 📄index.html
 ├── 📄style.css
