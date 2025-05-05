@@ -21,6 +21,7 @@ Este proyecto es un sitio web interactivo diseñado para parejas que buscan capt
 | 📱 Media Queries | Adaptación a diferentes tamaños de pantalla |
 
 ## 📂 Estructura del Proyecto
+```plaintext
 📦wedding-planner
 ├── 📄index.html
 ├── 📄style.css
@@ -30,7 +31,7 @@ Este proyecto es un sitio web interactivo diseñado para parejas que buscan capt
 └── 📂fonts
     ├── 📄GulfsDisplay.woff
     └── 📄Anybody.otf
-
+    
 # 🏡 Secciones del Sitio
 - **🏠 Inicio**: Presentación visual con imágenes destacadas.
 - **👥 Nosotros**: Información sobre los servicios y filosofía del equipo.
@@ -53,3 +54,4 @@ El sitio está diseñado para funcionar correctamente en:
 - **🌍 Navegadores modernos** (Chrome, Firefox, Safari, Edge).
 - **📱 Dispositivos móviles** (smartphones y tablets).
 - **💻 Pantallas de escritorio** de diferentes tamaños.
+
