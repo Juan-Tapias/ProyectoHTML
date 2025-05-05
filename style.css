@@ -8,6 +8,13 @@ header{
   justify-content: flex-end;
   position: relative;
 }
+@font-face {
+  font-family: 'MiFuente';
+  src: url('fonts/Anybody-Medium.otf') format('otf'),
+       url('fonts/GulfsDisplay-Normal.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 .pareja5, .chica-flores2, .contenedor-pareja5, .email, .capturar-email, .barra-naranja, .email-aqui, .texto-email, .texto-email-pequeño{
   display: none;
   opacity: 0;
@@ -62,7 +69,7 @@ header{
   background-color: pink;
   width: 50vw;
   height: 100vh;
-  z-index: 3;
+  z-index: 20;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -108,7 +115,7 @@ header{
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.5);
-  z-index: 2; 
+  z-index: 19; 
   display: none;
   transition: opacity 0.3s ease;
 }
@@ -203,7 +210,6 @@ header{
   width: auto;
   max-width: 100%;
 }
-
 .cara-feliz img {
   position: absolute;
   margin-left: 10vw;
@@ -847,6 +853,7 @@ header{
   grid-template-areas:
     "publicidad publicidad publicidad publicidad publicidad"
     "politica politica facebook instagram telegram";
+    box-shadow: -1vw 1vw black;
 }
 .publicidad{
   grid-area: publicidad;
@@ -862,6 +869,10 @@ header{
   padding: 1em;
   font-size: 3vw;
   color: black;
+}
+.politicas a{
+  text-decoration: none;
+  color: #000000;
 }
 .facebook{
   grid-area: facebook;
@@ -936,6 +947,8 @@ header{
   margin-left: -12px;
 }
 .caja-negra{
+  display: grid;
+  opacity: 1;
   height: 20vw;
   background-color: #000000;
 }
@@ -953,7 +966,10 @@ header{
     text-align: center;
     padding: 1rem;
 }
-
+.chat a{
+  text-decoration: none;
+  color: #000000;
+}
 .menu-horizontal {
   display: none;
 }
@@ -964,7 +980,8 @@ header{
   .menu-expandido,
   .cerrar,
   .fondo-oscuro,
-  .estrella-cabina{
+  .estrella-cabina,
+  .caja-negra{
     opacity: 0;
     display: none ;
   }
@@ -1616,5 +1633,195 @@ header{
     background-color: #FF6541;
     border: 1px solid black;
     box-shadow: 0.4vw 0.4vw black;
+  }
+  /* ---------------------------SECCION CONTACTO-------------------------- */
+  .contacto{
+    background-color: pink;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    height: 51vw;
+    position: relative;
+    width: 100%;
+  }
+  
+  .imagenes-contacto {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  .champaña2{
+    position: absolute;
+    z-index: 3;
+  }
+  .serpentina-naranja2{
+    position: absolute;
+    z-index: 3;
+  }
+  .carita2{
+    position: absolute;
+    z-index: 4;
+  }
+  .serpentina-azul2{
+    position: absolute;
+    z-index: 4;
+  }
+  .imagenes-contacto img {
+    position: absolute;
+  }
+  
+  /* Elementos reducidos en un 30% aprox */
+  .pareja    { top: 16vw; left: 10vw; width: 25vw; z-index: 1; } 
+  .champaña  { top: 38vw; left: 31.3vw; width: 8vw; z-index: 5; }
+  .carita    { top: 42vw; left: 10vw; width: 7vw; }
+  .radio     { top: 12vw;  left: 7vw; width: 12vw; }
+  .libro     { top: 33vw; left: 7vw; width: 7vw; }
+  .corazon   { top: 25vw; left: 5vw; width: 4.5vw; }
+  .serpentina-azul { top: 32vw; left: 31.5vw; width: 4.5vw; } 
+  .serpentina-naranja { top: 39vw; left: 10vw; width: 12vw; }
+  .anillo    { top: 25vw; left: 31vw; width: 8vw;}
+  .brillos   { top: 20vw; left: 34vw; width: 3.5vw; height: 7vw; }
+  .yay       { top: 10.5vw;  left: 21vw; width: 8vw;}
+  .disco     { top: 12vw;  left: 32vw; width: 8vw; }
+  
+  .consulta{
+    position: absolute;
+    margin-top: -14vw; 
+    font-size: 4vw; 
+    left: 0;
+    color: #035DFF;
+    margin-left: 47vw;
+  }
+  .calendario{
+    font-size: 1.3vw; 
+    position: absolute;
+    left: 0;
+    margin-top: -3vw; 
+    margin-left: 47vw;
+  }
+  .fecha{
+    font-size: 3.5vw;
+    position: absolute;
+    left: 0;
+    margin-top: 7vw; 
+    margin-left: 47vw;
+    color: #FF6541;
+  }
+  .flecha-izquierda{
+    width: 3vw; /* de 10vw */
+    height: 3vw; /* de 10vw */
+  }
+  .flecha-izquierda img{
+    position: absolute;
+    right: 0;
+    margin-top: 4vw; 
+    margin-right: 20vw; 
+    width: 3vw; 
+    height: 3vw; 
+  }
+  .circulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    position: absolute;
+    right: 0;
+    margin-top: 8vw; 
+    margin-right: 12vw;
+    border-radius: 50%;
+    width: 5vw; 
+    height: 5vw; 
+    background-color: #FF6541;
+  }
+  .circulo img{
+    width: 3vw; 
+    height: 3vw; 
+  }
+  .linea-naranja{
+    position: absolute;
+    margin-top: 14vw; 
+    background-color: #FF6541;
+    width: 40vw;
+    height: 0.5vw; 
+    border-radius: 50px;
+    left: 0;
+    margin-left: 47vw;
+  }
+  .redes{
+    position: absolute;
+    left: 0;
+    width: 42.3vw;
+    margin-left: 47vw;
+    margin-top: 30vw; 
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: repeat(9, 4.7vw);
+    grid-template-rows: 4vw;
+    grid-template-areas:
+      "publicidad publicidad publicidad politica politica politica facebook instagram telegram";
+      box-shadow: -0.5vw 0.5vw black;
+  }
+  .publicidad{
+    grid-area: publicidad;
+    border: 1px solid black;
+    background-color: white;
+    padding: 1em;
+    font-size: 1vw; 
+  }
+  .politicas{
+    grid-area: politica;
+    border: 1px solid black;
+    background-color: white;
+    padding: 1em;
+    font-size: 1vw; 
+    color: black;
+  }
+  .politicas a{
+    text-decoration: none;
+    color: #000000;
+  }
+  .circulo-azul{
+    width: 2.5vw; 
+    height: 2.5vw; 
+  }
+  .circulo-rosado{
+    width: 2.5vw; 
+    height: 2.5vw; 
+  }
+  .circulo-amarillo{
+    width: 2.5vw; 
+    height: 2.5vw; 
+  }
+  .chat{
+      text-decoration: none;
+      color: black;
+      width: 5vw; 
+      height: 5vw; 
+      border-radius: 10vw;
+      background-color: #fff35f;
+      border: 1px solid black;
+      position: fixed;
+      z-index: 30;
+      bottom: 3vw;
+      right: 3vw;
+      align-content: center;
+      text-align: center;
+      padding: 0.5rem;
+  }
+  .chat a{
+    text-decoration: none;
+    color: #000000;
+  }
+  .contenedor-chat{
+    color: #000000;
+    text-decoration: none;
+    display: flex;
+    opacity: 1;
+    justify-content: flex-end;
+    align-items: flex-end;
+    position: absolute;
+    bottom: 0;              
+    right: 0;
   }
 }
